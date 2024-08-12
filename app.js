@@ -12,7 +12,7 @@ enviarBoton.addEventListener("click", (event) => {
 
     if (!nombre || !apellido || !email || !fechaNacimiento || !paisResidencia) {
         alert("Rellená todos los campos!");
-        event.preventDefault(); // Evita que se envie el formualrio si no se completaron todos los campos
+        event.preventDefault(); // Evita que se envie el formulario si no se completaron todos los campos
         return false;
     } else if (!email.includes("@")) {
         alert("El email debe contener un '@'.");
