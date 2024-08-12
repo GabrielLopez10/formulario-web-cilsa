@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario Web</title>
+    <link rel="stylesheet" href="styles/style.css">
+    <link rel="stylesheet" href="styles/alto-contraste.css" id="alto-contraste" disabled>
+</head>
+
+<body>
+    <h1>Formulario Web</h1>
+    <button id="selector-alto-contraste">Alto Contraste</button>
+    <main>
+        <form name="mi-formulario">
+            <label for="nombre">Nombre:</label>
+            <input type="text" title="nombre" name="nombre" required>
+            <label for="apellido">Apellido:</label>
+            <input type="text" title="apellido" name="apellido" required>
+            <label for="email">Email:</label>
+            <input type="email" title="email" name="email" required>
+            <label for="fecha-nacimiento">Fecha de Nacimiento:</label>
+            <input type="date" title="fecha-nacimiento" id="fecha" name="fecha-nacimiento" required>
+            <label for="pais-residencia">Pais de Residencia:</label>
+            <input type="text" title="pais-residencia" name="pais-residencia" required>
+            <input type="submit" value="Enviar" class="enviar-boton">
+        </form>
+    </main>
+    <script src="./app.js"></script>
+</body>
+
+</html>
