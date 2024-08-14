@@ -4,11 +4,8 @@ const estiloAltoContraste = document.getElementById("alto-contraste");
 
 // Implementa el boton para activar el botón de contraste alto.
 selectorContraste.addEventListener("click", () => {
-    if (estiloAltoContraste.disabled) {
-        estiloAltoContraste.disabled = false;
-    } else {
-        estiloAltoContraste.disabled = true;
-    }
+    estiloAltoContraste.disabled = !estiloAltoContraste.disabled;
+    updateErrorMessageColors();
 });
 
 enviarBoton.addEventListener("click", (event) => {
@@ -22,6 +19,7 @@ enviarBoton.addEventListener("click", (event) => {
     const fechaNacimiento = form["fecha-nacimiento"].value.trim();
     const paisResidencia = form["pais-residencia"].value.trim();
 
+    // Limpia los mensajes de errores previos
     const errorMessages = document.querySelectorAll(".error-message");
     errorMessages.forEach((msg) => msg.remove());
 
@@ -74,7 +72,17 @@ enviarBoton.addEventListener("click", (event) => {
 function showError(input, message) {
     const error = document.createElement("span");
     error.className = "error-message";
-    error.style.color = "red";
     error.textContent = message;
     input.parentNode.insertBefore(error, input.nextSibling);
+
+    updateErrorMessageColors();
+}
+
+function updateErrorMessageColors() {
+    const errorMessages = document.querySelectorAll(".error-message");
+    const color = estiloAltoContraste.disabled ? "red" : "yellow";
+
+    errorMessages.forEach((msg) => {
+        msg.style.color = color;
+    });
 }
