@@ -25,14 +25,16 @@ enviarBoton.addEventListener("click", (event) => {
 
     let isValid = true;
 
+    const regex = /^[a-zA-Z\s]+$/;
+
     // Valida cada entrada
-    if (!nombre) {
-        showError(form["nombre"], "Por favor, ingresa tu nombre.");
+    if (!nombre || !regex.test(nombre)) {
+        showError(form["nombre"], "Por favor, ingresa un nombre válido (sin números o símbolos).");
         isValid = false;
     }
 
-    if (!apellido) {
-        showError(form["apellido"], "Por favor, ingresa tu apellido.");
+    if (!apellido || !regex.test(apellido)) {
+        showError(form["apellido"], "Por favor, ingresa un apellido válido (sin números o símbolos).");
         isValid = false;
     }
 
@@ -52,10 +54,10 @@ enviarBoton.addEventListener("click", (event) => {
         isValid = false;
     }
 
-    if (!paisResidencia) {
+    if (!paisResidencia || !regex.test(paisResidencia)) {
         showError(
             form["pais-residencia"],
-            "Por favor, ingresa tu país de residencia."
+            "Por favor, ingresa un país válido (sin números o símbolos)."
         );
         isValid = false;
     }
