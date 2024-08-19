@@ -10,20 +10,22 @@
 </head>
 
 <body>
-    <h1>Formulario Web</h1>
-    <button id="selector-alto-contraste">Alto Contraste</button>
+    <header>
+        <h1>Formulario Web</h1>
+    </header>
+    <button id="selector-alto-contraste" role="button">Alto Contraste</button>
     <main>
         <form name="mi-formulario">
             <label for="nombre">Nombre:</label>
-            <input type="text" title="nombre" name="nombre" required>
+            <input type="text" name="nombre" id="nombre" aria-required="true">
             <label for="apellido">Apellido:</label>
-            <input type="text" title="apellido" name="apellido" required>
+            <input type="text" name="apellido" id="apellido" aria-required="true">
             <label for="email">Email:</label>
-            <input type="email" title="email" name="email" required>
+            <input type="email" name="email" id="email" aria-required="true">
             <label for="fecha-nacimiento">Fecha de Nacimiento:</label>
-            <input type="date" title="fecha-nacimiento" id="fecha" name="fecha-nacimiento" required>
+            <input type="date" name="fecha-nacimiento" id="fecha-nacimiento" aria-required="true">
             <label for="pais-residencia">Pais de Residencia:</label>
-            <input type="text" title="pais-residencia" name="pais-residencia" required>
+            <input type="text" name="pais-residencia" id="pais-residencia" aria-required="true">
             <input type="submit" value="Enviar" class="enviar-boton">
         </form>
     </main>
