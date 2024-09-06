@@ -1,4 +1,4 @@
-![encriptador logo](https://res.cloudinary.com/dfzw74nlk/image/upload/v1725662696/b7yenvf2hzevny0h9ldl.jpg)
+
 
 # Formulario Web
 
