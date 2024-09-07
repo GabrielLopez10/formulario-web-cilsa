@@ -15,8 +15,8 @@
         <h1>Formulario Web</h1>
     </header>
     <button id="selector-alto-contraste" role="button" class="btn btn-secondary">Alto Contraste</button>
-    <main>
-        <form name="mi-formulario" class="form-group shadow-lg p-3 needs-validation" novalidate>
+    <main class="d-flex justify-content-center">
+        <form name="mi-formulario" class="form-group shadow-lg p-4 m-4 col-sm-6 col-md-5 col-lg-3 needs-validation" novalidate>
             <div class="mb-4">
                 <label for="nombre" class="form-label">Nombre</label>
                 <input type="text" name="nombre" id="nombre" class="form-control" required />
@@ -45,7 +45,7 @@
                 </select>
             </div>
 
-            <button class="btn btn-primary" type="submit">Enviar</button>
+            <button class="btn btn-primary d-flex justify-content-center col-6 mx-auto" type="submit">Enviar</button>
         </form>
     </main>
     <script src="./app.js"></script>

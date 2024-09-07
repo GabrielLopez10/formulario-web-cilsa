@@ -25,11 +25,7 @@ header {
 }
 
 form {
-    display: flex;
-    flex-direction: column;
     color: rgb(214, 142, 53);
-    width: auto;
-    margin: 3% 40%;
     border-radius: 20px;
     background-color: black;
 }
