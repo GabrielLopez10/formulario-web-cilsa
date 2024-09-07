@@ -18,4 +18,4 @@
 
 ## Breve descripción del proyecto
 
-Formulario web inclusivo con alto contraste.
+Formulario web inclusivo con alto contraste. Adaptado a Bootstrap
