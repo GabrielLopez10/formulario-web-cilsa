@@ -20,9 +20,6 @@ body {
 }
 
 header {
-    display: flex;
-    justify-content: center;
-    width: auto;
     color: rgb(203, 247, 44);
     margin: 1%;
 }
@@ -30,12 +27,9 @@ header {
 form {
     display: flex;
     flex-direction: column;
-    align-items: center;
     color: rgb(214, 142, 53);
-    gap: 20px;
     width: auto;
     margin: 3% 40%;
-    padding: 4%;
     border-radius: 20px;
     background-color: black;
 }
@@ -50,18 +44,6 @@ form {
     cursor: pointer;
     background-color: rgb(13, 31, 43);
     color: #ffffff;
-}
-
-input[type="text"], input[type="email"], input[type="date"] {
-    padding: 10px;
-    border: none;
-    border-radius: 5px;
-    width: 100%;
-    max-width: 300px;
-}
-
-input[type="text"]:focus, input[type="email"]:focus, input[type="date"]:focus {
-    outline: 2px solid #ca9c1e;
 }
 
  .enviar-boton {
